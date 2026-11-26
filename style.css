@@ -31,6 +31,25 @@ body {
     overflow: hidden;
 }
 
+.logo_function{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    max-width: 100%;
+    margin-bottom: 40px;
+}
+
+.logo_function img{
+    height: 60px;
+    width: auto;
+    flex-shrink: 0;
+}
+
+.logo_function p{
+    color: white;
+    font-size: 20px;
+}
+
 .funcoes {
     display: flex;
     flex-direction: column;
@@ -68,12 +87,11 @@ body {
 }
 
 .btn_saldo:hover{
-       background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-
 }
 
 /*estilo cartoes*/
@@ -98,7 +116,7 @@ body {
     gap: 6px;
     color: white;
     border-radius: 14px;
-     background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border: 1px solid rgba(255, 255, 255, 0.2);
