@@ -1,4 +1,4 @@
-* {
+*{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -18,13 +18,17 @@ body {
     overflow: hidden;
 }
 
-/* Estilo aba de funcoes */
-.aba {
+/* =========================================
+   ESTILO DAS FUNCOES (ABA LATERAL)
+   ========================================= */
+
+/*estilo aba de funcoes*/
+.aba{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     width: 20%;
-    min-width: 180px; 
+    min-width: 180px;
     flex-shrink: 0;
     padding: 16px;
     background-color: rgb(0, 76, 207);
@@ -39,9 +43,7 @@ body {
     width: 100%;
 }
 
-
-
-.btn_saldo {
+.btn_saldo{
     display: inline-flex;
     align-items: center;
     gap: 4px;
@@ -68,19 +70,32 @@ body {
     text-overflow: ellipsis;
 }
 
-/* Estilo cartoes */
+/* =========================================
+   ESTILO DOS CARTOES E SALDO ATUAL
+   ========================================= */
+
+/*estilo cartoes*/
 .carteira {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex: 1; 
-    min-width: 0;   
+    flex: 1;
+    min-width: 0;
     padding: 10px;
     background-color: rgb(0, 76, 148);
     overflow: hidden;
 }
 
+.sald_atual {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    color: white;
+}
+
 .cartoes {
+    display: flex;
     width: 100%;
     max-width: 480px;
     height: 240px;
@@ -90,4 +105,11 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 20px;
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.cartoes p{
+    margin: auto;
+    color: rgba(255, 255, 255, 0.395);
+    font-size: 40px;
+    border-radius: 20px;
 }
